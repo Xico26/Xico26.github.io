@@ -5,6 +5,9 @@ body {
     font-weight: 500;
 }
 
+ul {
+    padding: 0;
+}
 .container {
     width: 80%;
     margin: 0 auto;
@@ -17,9 +20,6 @@ header::after {
 }
 
 #header-logo {
-    float: left;
-    margin-top:1px;
-    margin-bottom: 1px;
     border-radius: 12px;
 }
 
@@ -58,18 +58,22 @@ nav a:hover {
     position: relative;
     text-align: center;
     color: whitesmoke;
+    background-image: url(https://github.com/Xico26/Xico26.github.io/blob/main/img/coding%20wallpaper.jpg?raw=true);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
 
 #centered-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    max-width: 90%;
+    padding: 2rem;
     
 }
 
 #home-title {
-    font-size: 100px;
+    font-size: clamp(1rem, 10vmin, 3rem);
 }
 
 #social-media {
@@ -82,7 +86,7 @@ nav a:hover {
 }
 
 #social-media-buttons li i {
-    font-size: 80px;
+    font-size: clamp(2rem, 10vmin, 5rem);
 }
 
 #home-navbar {
@@ -100,6 +104,7 @@ nav a:hover {
 .aboutme-title {
     text-align: center;
     color: #ffbf0f;
+    font-size: clamp(1rem, 10vmin, 1.5rem);
 }
 
 #aboutme-list li {
@@ -121,6 +126,7 @@ nav a:hover {
 #pc-specs-title {
     text-align: center;
     color: #ffbf0f;
+    font-size: clamp(1rem, 10vmin, 1.5rem);
 }
 #pc-specs li {
     list-style: none;
@@ -141,6 +147,7 @@ nav a:hover {
 #communities-title {
     text-align: center;
     color: #ffbf0f;
+    font-size: clamp(1rem, 10vmin, 1.5rem);
 }
 #communities-list li {
     list-style: none;
@@ -158,7 +165,7 @@ nav a:hover {
 
 #home-header-logo {
     border-radius: 15px;
-    height: 300px;
+    max-width: min(100%, 300px);
 }
 
 body::-webkit-scrollbar {
