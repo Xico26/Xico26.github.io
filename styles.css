@@ -1,28 +1,102 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-
 @theme {
   --color-blue-bg: #09093D;
 }
 
 body {
-  background: #000524;
-  background: linear-gradient(90deg,rgba(0, 5, 36, 1) 0%, rgba(11, 20, 56, 1) 55%, rgba(4, 11, 36, 1) 100%);
+  @apply bg-neutral-900 p-24;
+  font-family: "Outfit", sans-serif;
 }
 
 .jb-mono {
   font-family: "JetBrains Mono", sans-serif;
 }
 
-.tab-header {
-  @apply cursor-pointer border border-white p-2;
+.social-link {
+  @apply text-sm text-neutral-400 hover:text-neutral-100 transition-colors flex items-center gap-1;
+  font-family: 'JetBrains Mono', monospace;
 }
 
-.selected {
-  @apply bg-white text-blue-bg;
+.language-section {
+  @apply flex gap-4 py-2 mt-4 items-stretch;
 }
 
+.language-card {
+  @apply border border-y-white/20 border-r-white/20 border-l-[3px] rounded-md p-4 flex flex-col gap-3 bg-white/5 hover:bg-white/10 transition-colors;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.language-card-header {
+  @apply flex items-center gap-2;
+}
+
+.skill-level {
+  @apply text-xs text-white/500 mt-auto;
+}
+
+.language-name {
+  @apply text-sm font-medium tracking-wide;
+}
+
+.language-frameworks {
+  @apply flex flex-col gap-1;
+}
+
+.framework {
+  @apply text-xs text-white/50;
+}
+
+.badge-section {
+  @apply flex flex-wrap gap-2 items-center min-h-8;
+}
+
+.badge {
+  @apply text-xs px-2 py-1 rounded-full;
+}
+
+.knowledge-level {
+  @apply text-xl font-bold;
+}
+
+.table-category.hidden-section {
+  display: none;
+}
+
+.project-card {
+  @apply border border-y-white/20 border-r-white/20 border-l-[3px] rounded-md p-5 flex flex-col gap-3 hover:bg-white/5 transition-colors min-w-72 max-w-96;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.project-image {
+  @apply w-full h-28 rounded bg-white/5 flex items-center justify-center;
+}
+
+.heading {
+  @apply text-4xl font-bold;
+  font-family: "JetBrains Mono", sans-serif;
+}
+
+.about-grid {
+  @apply grid grid-cols-2 gap-12 items-start mt-4;
+}
+
+.about-text {
+  @apply flex flex-col gap-4  text-neutral-200;
+}
+
+.terminal-block {
+  @apply border border-white/20 rounded-md p-5 flex flex-col gap-1;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.terminal-line {
+  @apply text-sm text-neutral-100;
+}
+
+.terminal-output {
+  @apply text-xs text-neutral-400 ml-2;
+}
 
 *,
 *::before,
@@ -37,19 +111,19 @@ body {
   transition:
     color 0.5s,
     background-color 0.5s;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
+  /*font-family:*/
+  /*  Inter,*/
+  /*  -apple-system,*/
+  /*  BlinkMacSystemFont,*/
+  /*  'Segoe UI',*/
+  /*  Roboto,*/
+  /*  Oxygen,*/
+  /*  Ubuntu,*/
+  /*  Cantarell,*/
+  /*  'Fira Sans',*/
+  /*  'Droid Sans',*/
+  /*  'Helvetica Neue',*/
+  /*  sans-serif;*/
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
