@@ -72,6 +72,11 @@ body {
   @apply w-full h-28 rounded bg-white/5 flex items-center justify-center;
 }
 
+.project-image img {
+  @apply w-full h-28 rounded bg-white/5 flex items-center justify-center object-cover;
+}
+
+
 .heading {
   @apply text-4xl font-bold;
   font-family: "JetBrains Mono", sans-serif;
