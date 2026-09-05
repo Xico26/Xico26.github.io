@@ -5,7 +5,7 @@
 }
 
 body {
-  @apply bg-neutral-900 p-24;
+  @apply bg-neutral-900 p-12 md:p-24;
   font-family: "Outfit", sans-serif;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .language-section {
-  @apply flex gap-4 py-2 mt-4 items-stretch;
+  @apply flex gap-4 py-2 mt-4 items-stretch flex-wrap;
 }
 
 .language-card {
@@ -64,7 +64,7 @@ body {
 }
 
 .project-card {
-  @apply border border-y-white/20 border-r-white/20 border-l-[3px] rounded-md p-5 flex flex-col gap-3 hover:bg-white/5 transition-colors min-w-72 max-w-96;
+  @apply border border-y-white/20 border-r-white/20 border-l-[3px] rounded-md p-5 flex flex-col gap-3 hover:bg-white/5 transition-colors w-full;
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -76,14 +76,13 @@ body {
   @apply w-full h-28 rounded bg-white/5 flex items-center justify-center object-cover;
 }
 
-
 .heading {
   @apply text-4xl font-bold;
   font-family: "JetBrains Mono", sans-serif;
 }
 
 .about-grid {
-  @apply grid grid-cols-2 gap-12 items-start mt-4;
+  @apply flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-12 items-start mt-4;
 }
 
 .about-text {
