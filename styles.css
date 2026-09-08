@@ -19,7 +19,7 @@ body {
 }
 
 .language-section {
-  @apply flex gap-4 py-2 mt-4 items-stretch flex-wrap;
+  @apply grid grid-cols-2 gap-4 py-2 mt-4 items-stretch md:flex md:flex-wrap;
 }
 
 .language-card {

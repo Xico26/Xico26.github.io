@@ -360,11 +360,17 @@ body {
 }
 .language-section {
   margin-top: calc(var(--spacing) * 4);
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
   gap: calc(var(--spacing) * 4);
   padding-block: calc(var(--spacing) * 2);
+  @media (width >= 48rem) {
+    display: flex;
+  }
+  @media (width >= 48rem) {
+    flex-wrap: wrap;
+  }
 }
 .language-card {
   display: flex;
